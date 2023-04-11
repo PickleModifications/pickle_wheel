@@ -34,6 +34,10 @@ You'll need to select your device from the dropdown, and save the settings after
 
 <a href='https://picklemods.com'>Click here!</a>
 
+## Credits:
+
+[Spendibus: Wheel & Pedal Gamepad API Snippet](http://spenibus.net/b/p/F/PC-steering-wheel-viewer-prototype-in-html-javascript)
+
 ## Ready to download?
 
 Enjoy!
