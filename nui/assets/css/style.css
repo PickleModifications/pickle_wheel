@@ -1,0 +1,191 @@
+body {
+    background-color:transparent;
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50vw;
+    height: 30vw;
+}
+
+#container > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wheel-display {
+    height: 5vw;
+}
+
+#wheel {
+    display:inline-block;
+    vertical-align:bottom;
+    height: 100%;
+    transform-origin:center center;
+    margin-right:1vw;
+}
+ 
+.pedal {
+    display:inline-block;
+    vertical-align:bottom;
+    width:1vw;
+    height: 100%;
+    margin-left: 0.25vw;
+    margin-right:0.25vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.pedal > span {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    vertical-align:top;
+}
+
+.top {
+    align-items: center;
+    padding-bottom: 1vw;
+}
+
+.middle {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #484848;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b;
+}
+
+.middle > h3, .middle > span {
+    align-self: center;
+    width: 50%;
+}
+
+.middle > span {
+    margin-left: 4vw;
+    margin-bottom: 1.15vw;
+}
+
+.middle > div {
+    margin-left: 4vw;
+}
+
+.option {
+    display: flex;
+    align-self: center;
+    width: 50%;
+    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
+}
+
+.option > div:first-child {
+    display: flex;
+}
+
+.option > div > b {
+    align-self: center;
+}
+
+.option > div:last-child {
+    margin-left: auto;
+}
+
+.bottom {
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#throttle  {
+    background-color:#0A0;
+}
+#brake {
+    background-color:#C00;
+}
+
+h1 {
+    font-size: 1.25vw;
+}
+
+h3 {
+    font-size: 1.0vw;
+}
+
+input {
+    font-size: 0.5vw;
+    width: 4.5vw;
+}
+
+select {
+    width: 5vw;
+}
+
+.pressed > div > b {
+    color: red;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 2vw;
+    font-size: 1.15vw;
+}
+
+.button.success {
+    cursor: pointer;
+    background-color: rgb(0, 100, 0);
+    transition: 0.25s;
+}
+
+.button.success:hover {
+    background-color: rgb(0, 200, 0);
+}
+
+#close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: rgb(100, 0, 0);
+    color: white;
+    transition: 0.25s;
+}
+
+#close:hover {
+    background-color: red;
+}
